@@ -3,11 +3,11 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://demo.useliftoff.com",
+      url: "https://zapsolutions-demo.sites.treckstar.net",
       lastModified: new Date(),
     },
     {
-      url: "https://demo.useliftoff.com/demo",
+      url: "https://zapsolutions-demo.sites.treckstar.net/demo",
       lastModified: new Date(),
     },
   ];

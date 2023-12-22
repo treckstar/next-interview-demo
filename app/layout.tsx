@@ -2,26 +2,26 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Liftoff - AI-Powered Mock Interviews",
+  title: "InterviewIQ - AI-Powered Mock Interviews",
   openGraph: {
-    title: "Liftoff - AI-Powered Mock Interviews",
+    title: "InterviewIQ - AI-Powered Mock Interviews",
     description:
-      "Liftoff is an AI-powered mock interview platform that helps you practice for your next job interview.",
+      "InterviewIQ is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: [
       {
-        url: "https://demo.useliftoff.com/opengraph-image",
+        url: "https://zapsolutions-demo.sites.treckstar.net/opengraph-image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liftoff - AI-Powered Mock Interviews",
+    title: "InterviewIQ - AI-Powered Mock Interviews",
     description:
-      "Liftoff is an AI-powered mock interview platform that helps you practice for your next job interview.",
-    images: ["https://demo.useliftoff.com/opengraph-image"],
+      "InterviewIQ is an AI-powered mock interview platform that helps you practice for your next job interview.",
+    images: ["https://zapsolutions-demo.sites.treckstar.net/opengraph-image"],
     creator: "@tmeyer_me",
   },
-  metadataBase: new URL("https://demo.useliftoff.com"),
+  metadataBase: new URL("https://zapsolutions-demo.sites.treckstar.net"),
   themeColor: "#FFF",
 };
 

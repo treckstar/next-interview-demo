@@ -2,7 +2,7 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "Precedent - Building blocks for your Next.js project";
+export const alt = "InterviewIQ - Building blocks for your Next.js project";
 export const contentType = "image/png";
 
 export default async function OG() {
@@ -28,10 +28,10 @@ export default async function OG() {
       >
         <img
           src={new URL(
-            "../public/apple-touch-icon.png",
+            "../public/logo.svg",
             import.meta.url
           ).toString()}
-          alt="Liftoff Logo"
+          alt="InterviewIQ Logo"
           tw="w-20 h-20 mb-4 opacity-95"
         />
         <h1

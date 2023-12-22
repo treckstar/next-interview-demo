@@ -196,10 +196,10 @@ export default function DemoPage() {
         selected.name === "Behavioral"
           ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
           : selectedInterviewer.name === "John"
-          ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-          : selectedInterviewer.name === "Richard"
-          ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
-          : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?";
+            ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
+            : selectedInterviewer.name === "Richard"
+              ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
+              : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?";
 
       setStatus("Transcribing");
 
@@ -232,13 +232,11 @@ export default function DemoPage() {
         });
 
         if (results.transcript.length > 0) {
-          const prompt = `Please give feedback on the following interview question: ${question} given the following transcript: ${
-            results.transcript
-          }. ${
-            selected.name === "Behavioral"
+          const prompt = `Please give feedback on the following interview question: ${question} given the following transcript: ${results.transcript
+            }. ${selected.name === "Behavioral"
               ? "Please also give feedback on the candidate's communication skills. Make sure their response is structured (perhaps using the STAR or PAR frameworks)."
               : "Please also give feedback on the candidate's communication skills. Make sure they accurately explain their thoughts in a coherent way. Make sure they stay on topic and relevant to the question."
-          } \n\n\ Feedback on the candidate's response:`;
+            } \n\n\ Feedback on the candidate's response:`;
 
           setGeneratedFeedback("");
           const response = await fetch("/api/generate", {
@@ -390,7 +388,7 @@ export default function DemoPage() {
                   </p>
                 </div>
                 <Link
-                  href="https://github.com/Tameyer41/liftoff"
+                  href="https://github.com/treckstar/next-interview-demo"
                   target="_blank"
                   className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                   style={{
@@ -463,10 +461,10 @@ export default function DemoPage() {
                     {selected.name === "Behavioral"
                       ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
                       : selectedInterviewer.name === "John"
-                      ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-                      : selectedInterviewer.name === "Richard"
-                      ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
-                      : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
+                        ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
+                        : selectedInterviewer.name === "Richard"
+                          ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
+                          : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
                   </h2>
                   <span className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal mb-4">
                     Asked by top companies like Google, Facebook and more
@@ -529,16 +527,16 @@ export default function DemoPage() {
                                       ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
                                       : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
                                     : selectedInterviewer.name === "Richard"
-                                    ? selected.name === "Behavioral"
-                                      ? "https://liftoff-public.s3.amazonaws.com/RichardBehavioral.mp4"
-                                      : "https://liftoff-public.s3.amazonaws.com/RichardTechnical.mp4"
-                                    : selectedInterviewer.name === "Sarah"
-                                    ? selected.name === "Behavioral"
-                                      ? "https://liftoff-public.s3.amazonaws.com/BehavioralSarah.mp4"
-                                      : "https://liftoff-public.s3.amazonaws.com/SarahTechnical.mp4"
-                                    : selected.name === "Behavioral"
-                                    ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
-                                    : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
+                                      ? selected.name === "Behavioral"
+                                        ? "https://liftoff-public.s3.amazonaws.com/RichardBehavioral.mp4"
+                                        : "https://liftoff-public.s3.amazonaws.com/RichardTechnical.mp4"
+                                      : selectedInterviewer.name === "Sarah"
+                                        ? selected.name === "Behavioral"
+                                          ? "https://liftoff-public.s3.amazonaws.com/BehavioralSarah.mp4"
+                                          : "https://liftoff-public.s3.amazonaws.com/SarahTechnical.mp4"
+                                        : selected.name === "Behavioral"
+                                          ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
+                                          : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
                                 }
                                 type="video/mp4"
                               />
@@ -763,7 +761,7 @@ export default function DemoPage() {
                       Restart demo
                     </button>
                     <Link
-                      href="https://github.com/Tameyer41/liftoff"
+                      href="https://github.com/treckstar/next-interview-demo"
                       target="_blank"
                       className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                       style={{
@@ -1390,7 +1388,7 @@ export default function DemoPage() {
                 <ul className="mb-auto list-none">
                   <li className="list-none flex items-center">
                     <p className="text-[12px] font-extrabold text-[#1E293B]">
-                      Liftoff
+                      InterviewIQ
                     </p>
                   </li>
                   <li className="mt-4 list-none flex items-center rounded-[9px] text-gray-900 py-[2px]">
@@ -1658,10 +1656,10 @@ export default function DemoPage() {
                       {selected.name === "Behavioral"
                         ? "Tell me about yourself"
                         : selectedInterviewer.name === "John"
-                        ? "What is a Hash Table, and what is the average case for each of its operations?"
-                        : selectedInterviewer.name === "Richard"
-                        ? "Uber is looking to expand its product line. How would you go about doing this?"
-                        : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
+                          ? "What is a Hash Table, and what is the average case for each of its operations?"
+                          : selectedInterviewer.name === "Richard"
+                            ? "Uber is looking to expand its product line. How would you go about doing this?"
+                            : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
                     </motion.span>
 
                     <ul className="mt-[28px] flex">
