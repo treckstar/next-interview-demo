@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "InterviewIQ - AI-Powered Mock Interviews",
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     creator: "@tmeyer_me",
   },
   metadataBase: new URL("https://zapsolutions-demo.sites.treckstar.net"),
-  themeColor: "#FFF",
 };
 
 export default async function RootLayout({
@@ -38,3 +37,13 @@ export default async function RootLayout({
     </html>
   );
 }
+
+const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: '#ffffff',
+  width: 'device-width',
+  initialScale: 1,
+};
+
+// Exporting this way to avoid NextJs 14 type error
+export { viewport };
