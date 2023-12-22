@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const alt = "InterviewIQ - Building blocks for your Next.js project";
 export const contentType = "image/png";
 
