@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <AnimatePresence>
-      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-[#F2F3F5] font-inter overflow-hidden">
+      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-[#373433] font-inter overflow-hidden">
         <svg
           style={{ filter: "contrast(125%) brightness(110%)" }}
           className="fixed z-[1] w-full h-full opacity-[35%]"
@@ -29,18 +29,20 @@ export default function Home() {
           <rect width="100%" height="100%" filter="url(#noise)"></rect>
         </svg>
         <main className="flex flex-col justify-center h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
-          <motion.img
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.15,
-              duration: 0.95,
-              ease: [0.165, 0.84, 0.44, 1],
-            }}
-            className="block w-[100px] row-start-2 mb-8 md:mb-6"
-            src="/logo-black.svg"
-            alt="InterviewIQ Logo"
-          />
+          <div className="relative text-center md:text-left">
+            <motion.img
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.15,
+                duration: 0.95,
+                ease: [0.165, 0.84, 0.44, 1],
+              }}
+              className="inline-block max-w-32 mb-3  lg:max-w-56 m-0 rotate-12 "
+              src="/logo.png"
+              alt="InterviewIQ Logo"
+            />
+          </div>
 
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -50,11 +52,11 @@ export default function Home() {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-transparent tesxt-clip bg-slate-100 bg-clip-text leading-[0.9] tracking-[-2px] z-[100]"
           >
             Elevate your <br />
-            tech <span className="text-[#407BBF]">interviews</span>
-            <span className="font-inter text-[#407BBF]">.</span>
+            tech <span className="bg-[#D7E476] bg-clip-text">interviews</span>
+            <span className="font-inter bg-[#D7E476] bg-clip-text">.</span>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -67,19 +69,19 @@ export default function Home() {
             className="flex flex-row justify-center z-20 mx-0 mb-0 mt-8 md:mt-0 md:mb-[35px] max-w-2xl md:space-x-8"
           >
             <div className="w-1/2">
-              <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
+              <h2 className="flex items-center font-semibold text-[1em] text-[#eeeeee]">
                 Platform
               </h2>
-              <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
+              <p className="text-[14px] leading-[20px] text-[#eeeeee] font-normal">
                 Full access to our platform, including all questions and
                 solutions.
               </p>
             </div>
             <div className="w-1/2">
-              <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
+              <h2 className="flex items-center font-semibold text-[1em] text-[#eeeeee]">
                 Community
               </h2>
-              <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
+              <p className="text-[14px] leading-[20px] text-[#eeeeee] font-normal">
                 Join a community of like-minded individuals, and learn from each
                 other.
               </p>
