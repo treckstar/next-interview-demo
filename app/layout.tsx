@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "InterviewIQ is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: ["https://zapsolutions-demo.sites.treckstar.net/opengraph-image"],
-    creator: "@tmeyer_me",
+    creator: "@treckstar",
   },
   metadataBase: new URL("https://zapsolutions-demo.sites.treckstar.net"),
 };
