@@ -8,15 +8,6 @@
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/treckstar">
-    <img src="https://img.shields.io/twitter/follow/treckstar?style=flat&label=Follow&logo=twitter&color=0bf&logoColor=fff" alt="Tyler Meyer's follower count" />
-  </a>
-  <a href="https://github.com/treckstar/next-interview-demo">
-    <img src="https://img.shields.io/github/stars/treckstar/next-interview-demo?label=treckstar%2Fliftoff" alt="InterviewIQ repo star count" />
-  </a>
-</p>
-
-<p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
   <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
@@ -26,19 +17,7 @@
 
 ## Introduction
 
-InterviewIQ is an interview preparation tool that provides AI feedback on your mock interviews.
-
-## One-click Deploy
-
-You can deploy this template to Vercel with the button below:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/treckstar/clone?demo-title=InterviewIQ%20%E2%80%93%C2%A0AI%20Mock%20Interview%20Simulator&demo-description=InterviewIQ%20is%20an%20interview%20preparation%20tool%20that%20provides%20AI%20feedback%20on%20your%20mock%20interviews%2C%20built%20with%20OpenAI%20Whisper%20and%20GPT.&demo-url=https%3A%2F%2Fzapsolutions-demo.sites.treckstar.net%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F5TbjLXmeKdo2rURpnjIEqn%2Fc7c8fc350183e8cd3c819d172c0005ac%2F68747470733a2f2f696b2e696d6167656b69742e696f2f396b6d3732617371752f436c65616e53686f745f323032332d30352d33315f61745f31322e34332e35&project-name=InterviewIQ%20%E2%80%93%C2%A0AI%20Mock%20Interview%20Simulator&repository-name=liftoff&repository-url=https%3A%2F%2Fgithub.com%2Ftreckstar%2Fliftoff&from=templates&skippable-integrations=1&env=OPENAI_API_KEY&envDescription=Get%20your%20OpenAI%20API%20key%20here%3A&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys)
-
-You can also clone & create this repo locally with the following command:
-
-```bash
-npx create-next-app liftoff --example "https://github.com/treckstar/next-interview-demo"
-```
+InterviewIQ is an interview preparation tool that provides AI feedback on your mock interviews. It uses OpenAI's GPT-3 to provide feedback on your interview performance, and it uses OpenAI's Whisper endpoint to transcribe your audio.
 
 ## Tech Stack + Features
 
@@ -82,4 +61,5 @@ We then send the audio directly to be transcribed by OpenAI's Whisper endpoint, 
 
 ## Author
 
-- Tyler Meyer ([@treckstar](https://twitter.com/treckstar))
+- Tyler Meyer ([@tmeyer_me](https://twitter.com/tmeyer_me))
+- Updated on 2023-12-22 by @treckstar
