@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 export const alt = "InterviewIQ - Building blocks for your Next.js project";
 export const contentType = "image/png";
 
 export default async function OG() {
   // Font
   const interSemiBold = await fetch(
-    new URL("./fonts/Recursive-Bold.ttf", import.meta.url)
+    new URL("./fonts/Recursive-SemiBold.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
