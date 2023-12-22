@@ -19,8 +19,8 @@
     "@upstash/redis": "^1.27.1",
     "clsx": "^2.0.0",
     "encoding": "^0.1.13",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
     "eventsource-parser": "^1.1.1",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.16",
@@ -30,7 +30,7 @@
     "react-dom": "18.2.0",
     "react-webcam": "^7.2.0",
     "sharp": "^0.33.1",
-    "typescript": "5.0.4",
+    "typescript": "5.3.3",
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
