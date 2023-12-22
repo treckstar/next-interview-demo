@@ -28,7 +28,7 @@ export default async function OG() {
       >
         <img
           src={new URL(
-            "../public/logo.svg",
+            "../public/logo.png",
             import.meta.url
           ).toString()}
           alt="InterviewIQ Logo"
