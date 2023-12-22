@@ -8,7 +8,7 @@ export const contentType = "image/png";
 export default async function OG() {
   // Font
   const interSemiBold = await fetch(
-    new URL("./fonts/Inter-SemiBold.ttf", import.meta.url)
+    new URL("./fonts/Recursive-Bold.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -21,31 +21,38 @@ export default async function OG() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "white",
-          backgroundImage:
-            "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #bde1ff 75%)",
+          backgroundColor: "#373433"
         }}
       >
         <img
-          src={new URL(
-            "../public/logo.png",
-            import.meta.url
-          ).toString()}
+          src="https://zapsolutions-demo.sites.treckstar.net/logo.png"
           alt="InterviewIQ Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          tw="w-30 h-30"
         />
-        <h1
+        <h2
           style={{
-            fontSize: "100px",
-            background:
-              "linear-gradient(to bottom right, #1E2B3A 21.66%, #78716c 86.47%)",
+            fontSize: "40px",
+            background: "white",
             backgroundClip: "text",
             color: "transparent",
             lineHeight: "5rem",
             letterSpacing: "-0.02em",
+            textAlign: "center",
+          }}>
+          InterviewIQ
+        </h2>
+        <h1
+          style={{
+            fontSize: "100px",
+            background: "#D7E476",
+            backgroundClip: "text",
+            color: "transparent",
+            lineHeight: "5rem",
+            letterSpacing: "-0.02em",
+            textAlign: "center",
           }}
         >
-          AI Mock Interviews
+          Demo for ZAP Solutions
         </h1>
       </div>
     ),
@@ -54,7 +61,7 @@ export default async function OG() {
       height: 630,
       fonts: [
         {
-          name: "Inter",
+          name: "Recursive",
           data: interSemiBold,
         },
       ],
