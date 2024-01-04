@@ -1,5 +1,5 @@
-<a href="https://zapsolutions-demo.sites.treckstar.net">
-  <img alt="InterviewIQ – AI-Powered Mock Interviews" src="https://zapsolutions-demo.sites.treckstar.net/opengraph-image">
+<a href="https://interviewiq.sites.treckstar.net">
+  <img alt="InterviewIQ – AI-Powered Mock Interviews" src="https://interviewiq.sites.treckstar.net/opengraph-image">
   <h1 align="center">InterviewIQ Interviews</h1>
 </a>
 

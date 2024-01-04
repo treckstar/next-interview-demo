@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import "../styles/globals.css";
 import { Metadata, Viewport } from "next";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
       "InterviewIQ is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: [
       {
-        url: "https://zapsolutions-demo.sites.treckstar.net/opengraph-image",
+        url: "https://interviewiq.sites.treckstar.net/opengraph-image",
       },
     ],
   },
@@ -18,10 +19,10 @@ export const metadata: Metadata = {
     title: "InterviewIQ - AI-Powered Mock Interviews",
     description:
       "InterviewIQ is an AI-powered mock interview platform that helps you practice for your next job interview.",
-    images: ["https://zapsolutions-demo.sites.treckstar.net/opengraph-image"],
+    images: ["https://interviewiq.sites.treckstar.net/opengraph-image"],
     creator: "@treckstar",
   },
-  metadataBase: new URL("https://zapsolutions-demo.sites.treckstar.net"),
+  metadataBase: new URL("https://interviewiq.sites.treckstar.net"),
 };
 
 export default async function RootLayout({
@@ -32,6 +33,19 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="scroll-smooth antialiased [font-feature-settings:'ss01']">
+        <header>
+          <div className="flex justify-between items-center px-4 py-4">
+            <div className="flex items-center">
+              <a href="/">
+                <img
+                  src="/text.png"
+                  alt="InterviewIQ Logo"
+                  width="201"
+                  height="46" />
+              </a>
+            </div>
+          </div>
+        </header>
         {children}
       </body>
     </html>
