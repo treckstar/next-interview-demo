@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="scroll-smooth antialiased [font-feature-settings:'ss01']">
-        <header>
+        <header className="bg-[#1D2B3A]">
           <div className="flex justify-between items-center px-4 py-4">
             <div className="flex items-center">
               <a href="/">

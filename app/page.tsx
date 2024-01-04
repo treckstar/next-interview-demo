@@ -38,7 +38,7 @@ export default function Home() {
                 duration: 0.95,
                 ease: [0.165, 0.84, 0.44, 1],
               }}
-              className="inline-block max-w-32 mb-3  lg:max-w-56 m-0 rotate-12 "
+              className="inline-block max-w-32 mb-3  lg:max-w-40 m-0 rotate-12 "
               src="/logo.png"
               alt="InterviewIQ Logo"
             />
@@ -52,7 +52,7 @@ export default function Home() {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-transparent tesxt-clip bg-slate-100 bg-clip-text leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[10vw] md:text-[80px] font-inter text-transparent tesxt-clip bg-slate-100 bg-clip-text leading-[0.9] tracking-[-2px] z-[100]"
           >
             Elevate your <br />
             tech <span className="bg-[#D7E476] bg-clip-text">interviews</span>
@@ -107,7 +107,7 @@ export default function Home() {
                     "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                <span className="w-5 h-5 rounded-full bg-[#2b2d2f] flex items-center justify-center">
                   <svg
                     className="w-[16px] h-[16px] text-white"
                     fill="none"
