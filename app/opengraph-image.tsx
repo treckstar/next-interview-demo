@@ -31,7 +31,7 @@ export default async function OG() {
         />
         <h2
           style={{
-            fontSize: "40px",
+            fontSize: "70px",
             background: "white",
             backgroundClip: "text",
             color: "transparent",
@@ -43,21 +43,23 @@ export default async function OG() {
         </h2>
         <h1
           style={{
-            fontSize: "100px",
+            fontSize: "40px",
             background: "#D7E476",
             backgroundClip: "text",
             color: "transparent",
-            lineHeight: "5rem",
+            lineHeight: "3rem",
             letterSpacing: "-0.02em",
             textAlign: "center",
+            width: "900px",
           }}
         >
-          Demo for treckstar.net
+          Using speech-to-text to automate interviews, so you can focus on what matters.
         </h1>
         <img
           src="https://interviewiq.sites.treckstar.net/text.png"
           alt="InterviewIQ Logo"
-          tw="w-30 h-30"
+          width={201}
+          height={46}
         />
       </div>
     ),
