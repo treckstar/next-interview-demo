@@ -25,7 +25,7 @@ export default async function OG() {
         }}
       >
         <img
-          src="https://zapsolutions-demo.sites.treckstar.net/logo.png"
+          src="https://interviewiq.sites.treckstar.net/logo.png"
           alt="InterviewIQ Logo"
           tw="w-30 h-30"
         />
@@ -52,8 +52,13 @@ export default async function OG() {
             textAlign: "center",
           }}
         >
-          Demo for ZAP Solutions
+          Demo for treckstar.net
         </h1>
+        <img
+          src="https://interviewiq.sites.treckstar.net/text.png"
+          alt="InterviewIQ Logo"
+          tw="w-30 h-30"
+        />
       </div>
     ),
     {
